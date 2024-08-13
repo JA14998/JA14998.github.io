@@ -8,8 +8,7 @@ function updateImage() {
     const ribbonColor = ribbonColors[currentRibbonColorIndex];
     const filling = fillings[currentFillingIndex];
     const imageName = `${ribbonColor}_${filling}.png`; // Construct the image name
-    const imagePath = `/Users/jordanashton/Documents/GitHub/JA14998.github.io/Balloon/images/Examples/${imageName}`; // Path to the image
-
+    const imagePath = `Balloon/images/Examples/${imageName}`; // Path to the image
     // Update the image source and force a reload
     document.getElementById('balloonImage').src = imagePath + "?t=" + new Date().getTime();
 }
