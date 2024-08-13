@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.scroll-button:focus {
+    outline: none;
+}
+
+#balloonImage {
+    max-width: 60%;
+    max-height: 40vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start; /* Align the image to the top */
+    justify-content: center; /* Center the image horizontally */
+    position: relative; /* Allows positioning children */
+}
+
+#balloonImage {
+    max-width: 60%;
+    max-height: 40vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button-wrapper {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Spread buttons to the sides */
+    width: 100%; /* Full width to align with ribbon buttons */
+    margin-top: 10px; /* Space between the image and filling buttons */
+}
+
+.ribbon-buttons {
+    display: flex; /* Use flexbox for ribbon buttons */
+    justify-content: space-between; /* Spread buttons to the sides */
+    width: 100%; /* Ensure it's the same width as button-wrapper */
+    margin-bottom: 10px; /* Space between ribbon buttons and image */
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px; /* Add padding for better touch targets */
+    flex: 1; /* Make buttons flexible to occupy equal space */
+    text-align: center; /* Center text in buttons */
+}
+
+.scroll-button:focus {
+    outline: none;
+}

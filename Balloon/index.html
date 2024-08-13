@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Customization</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Balloon</h1>
+
+        <!-- Control Buttons -->
+        <div class="control-container">
+            <div class="ribbon-buttons">
+                <button class="scroll-button" id="leftRibbonButton" onclick="changeRibbonColor('left')">⬅️</button>
+                <button class="scroll-button" id="rightRibbonButton" onclick="changeRibbonColor('right')">➡️</button>
+            </div>
+            <div class="image-container">
+                <img id="balloonImage" src="images/examples/br_pg.png" alt="Balloon Image">
+            </div>
+            <div class="button-wrapper">
+                <button class="scroll-button" id="leftFillingButton" onclick="changeFilling('left')">⬅️</button>
+                <button class="scroll-button" id="rightFillingButton" onclick="changeFilling('right')">➡️</button>
+            </div>
+        </div>
+
+        <form id="balloonForm" onsubmit="return false;">
+            <button type="button" onclick="customizeOrder()">Submit</button>
+        </form>
+
+        <div id="orderSummary" class="hidden">
+            <h2>Your Custom Balloon</h2>
+            <p id="summaryRibbonColor"></p>
+            <p id="summaryFilling"></p>
+        </div>
+    </div>
+</body>
+</html>
